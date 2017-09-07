@@ -1,0 +1,408 @@
+html {
+  box-sizing: border-box; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url("../fonts/roboto/Roboto-Bold.ttf") format("ttf"); }
+@font-face {
+  font-family: "Roboto-Light";
+  src: url("../fonts/roboto/Roboto-Light.ttf") format("ttf"); }
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("../fonts/roboto/Roboto-Regular.ttf") format("ttf"); }
+@font-face {
+  font-family: "Alegreya-Regular";
+  src: url("../fonts/alegreya/Alegreya-Regular.otf") format("otf"); }
+.photo {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 5px solid #e64c3c; }
+
+.item_profession {
+  color: #2c3e50;
+  font-family: "Roboto-Light", Helvetica, sans-serif;
+  font-size: 58px;
+  margin-top: 20px; }
+
+.item_flex {
+  display: flex;
+  justify-content: center; }
+
+.item_photo_top {
+  margin-top: 70px; }
+
+.item_name {
+  color: #e64c3c;
+  font-family: "Roboto-Bold", Helvetica, sans-serif;
+  margin-top: 20px; }
+
+.item_name {
+  font-size: 66px; }
+
+.information {
+  display: flex;
+  font-size: 35px;
+  margin-top: 20px;
+  color: #313131;
+  font-family: "Roboto-Light", Helvetica, sans-serif;
+  text-align: justify; }
+
+.education_flex {
+  display: flex;
+  justify-content: space-around;
+  width: 75%;
+  margin: auto; }
+
+.svg svg {
+  width: 100%;
+  height: 50px;
+  font-family: "Roboto-Regular", Helvetica, sans-serif; }
+
+.education_information {
+  display: flex;
+  justify-content: space-around;
+  width: 75%;
+  margin: auto; }
+
+.education_information_text {
+  font-size: 25px;
+  text-transform: uppercase;
+  font-family: "Roboto-Regular", Helvetica, sans-serif;
+  color: #2c3e50; }
+
+.two_block {
+  display: flex;
+  margin-top: 70px;
+  justify-content: space-between; }
+
+.block_1,
+.block_2 {
+  width: 40%; }
+
+.block_1 h3:first-child, .block_2 h3:first-child {
+  border-left: 8px solid #e64c3c;
+  line-height: 36px;
+  font-size: 35px;
+  font-family: "Alegreya-Regular", Helvetica, sans-serif;
+  padding-left: 10px;
+  background-color: #2c3e50;
+  color: #f0f4f4;
+  margin-bottom: 20px; }
+
+.name_1 {
+  color: #2c3e50;
+  font-family: "Roboto-Regular", Helvetica, sans-serif;
+  font-size: 25px; }
+
+.block_1 h3, p:not(.name_1) {
+  color: #313131;
+  font-family: "Roboto-Light", Helvetica, sans-serif;
+  font-size: 25px; }
+
+.block_2 p, .block_1 p {
+  margin-top: 20px; }
+
+.block_bottom h3 {
+  background-color: #2c3e50;
+  color: #f0f4f4;
+  line-height: 36px;
+  font-size: 35px;
+  font-family: "Alegreya-Regular", Helvetica, sans-serif;
+  border-left: 8px solid #e64c3c;
+  padding-left: 10px;
+  width: 370px; }
+
+.three_block {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 70px; }
+
+.upper {
+  text-transform: uppercase; }
+
+.circle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; }
+
+.block_bottom svg {
+  height: 50px;
+  width: 221px; }
+
+.three_block .block_bottom {
+  flex-basis: 30%; }
+
+.four_block {
+  margin-top: 70px;
+  position: relative; }
+
+.passion h3 {
+  background-color: #2c3e50;
+  color: #f0f4f4;
+  line-height: 36px;
+  font-size: 35px;
+  font-family: "Alegreya-Regular", Helvetica, sans-serif;
+  border-left: 8px solid #e64c3c;
+  padding-left: 10px;
+  width: 500px;
+  margin-top: 0; }
+
+.arrow::after {
+  content: "";
+  border: solid #fff;
+  border-width: 0 14px 14px 0;
+  padding: 12px;
+  transform: rotate(-45deg);
+  position: absolute;
+  top: 0;
+  left: 38%; }
+
+.arrow::before {
+  content: "";
+  border: solid #2c3e50;
+  border-width: 0 14px 14px 0;
+  padding: 12px;
+  transform: rotate(-45deg);
+  position: absolute;
+  top: 0;
+  left: 40%; }
+
+.four_block {
+  overflow: hidden; }
+
+.icon {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 auto 100px;
+  text-align: center; }
+
+.education {
+  height: 40px;
+  width: 40px;
+  margin-top: 70px; }
+
+.text h4 {
+  font-size: 25px;
+  color: #313131;
+  font-family: "Roboto-Regular", Helvetica, sans-serif; }
+
+/* tablet */
+@media screen and (min-width: 1024px) and (max-width: 1240px) {
+  main {
+    width: 85%; }
+
+  .three_block {
+    flex-wrap: wrap;
+    width: 99%; }
+
+  .low {
+    margin-top: 40px; }
+
+  .passion h3 {
+    width: 41%; }
+
+  .icon {
+    width: 85%; } }
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  main {
+    width: 85%; }
+
+  .block_1, .block_2 {
+    width: 47%; }
+
+  .three_block {
+    flex-wrap: wrap; }
+    .three_block .block_bottom {
+      width: 100%;
+      flex-basis: auto; }
+      .three_block .block_bottom h3 {
+        width: 100%; }
+
+  .low {
+    margin-top: 40px; }
+
+  .passion h3 {
+    width: 94%; }
+
+  .arrow::after {
+    content: "";
+    border: solid #2c3e50;
+    border-width: 0 14px 14px 0;
+    top: 0;
+    left: 93%; }
+
+  .arrow::before {
+    content: "";
+    border: solid #f0f4f4;
+    border-width: 0 14px 14px 0;
+    top: 0;
+    left: 90%; }
+
+  .icon {
+    width: 85%; } }
+@media screen and (min-width: 480px) and (max-width: 766px) {
+  .arrow::after {
+    content: "";
+    border-width: 0 14px 14px 0;
+    left: 92%; }
+
+  .arrow::before {
+    content: "";
+    border-width: 0 14px 14px 0;
+    left: 88%; }
+
+  .four_block .passion h3 {
+    width: 147%; } }
+/* mobile */
+@media screen and (max-width: 767px) {
+  main {
+    width: 85%; }
+
+  .item_photo_top {
+    margin-top: 20px; }
+
+  .photo {
+    width: 150px;
+    height: 150px; }
+
+  .item_name {
+    font-size: 35px; }
+
+  .item_profession {
+    font-size: 25px; }
+
+  .information {
+    text-align: center;
+    font-size: 18px; }
+
+  svg {
+    overflow: visible; }
+
+  .education_information_text {
+    font-size: 15px; }
+
+  .block_1 h3:first-child, .block_2 h3:first-child {
+    font-size: 20px;
+    margin-top: 20px; }
+
+  .two_block {
+    flex-wrap: wrap;
+    margin-top: 20px; }
+    .two_block .block_1, .two_block .block_2 {
+      width: 100%; }
+
+  .name_1 {
+    font-size: 18px; }
+
+  .block_1 h3, p:not(.name_1) {
+    font-size: 18px; }
+
+  .three_block {
+    flex-wrap: wrap;
+    margin-top: 0;
+    width: 100%; }
+    .three_block .block_bottom {
+      flex-basis: 100%; }
+      .three_block .block_bottom h3 {
+        width: 100%;
+        margin-top: 20px; }
+      .three_block .block_bottom svg {
+        width: 168px; }
+
+  .block_bottom h3 {
+    font-size: 20px; }
+
+  .four_block {
+    margin-top: 20px; }
+    .four_block .passion {
+      width: 63%; }
+      .four_block .passion h3 {
+        width: 134%;
+        font-size: 20px; }
+
+  .arrow::after {
+    content: "";
+    border: solid #2c3e50;
+    border-width: 0 14px 14px 0;
+    top: 0;
+    left: 83%; }
+
+  .arrow::before {
+    content: "";
+    border: solid #f0f4f4;
+    border-width: 0 14px 14px 0;
+    top: 0;
+    left: 77%; }
+
+  .icon {
+    width: 85%;
+    margin-bottom: 10px; }
+
+  .text h4 {
+    font-size: 10px; }
+
+  .education {
+    margin-top: 30px;
+    height: 25px;
+    width: 25px; } }
+header, main, footer {
+  max-width: 1240px;
+  min-width: 300px;
+  margin: 0 auto; }
+
+/*# sourceMappingURL=style.css.map */

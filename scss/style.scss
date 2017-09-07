@@ -1,0 +1,31 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+@import "reset/style";
+
+@import "font-face";
+
+@import "mixins";
+
+@import "variables";
+
+@import "header";
+
+@import "main";
+
+@import "footer";
+
+@import "responsive";
+
+header, main, footer {
+  max-width: 1240px;
+  min-width: 300px;
+  margin: 0 auto;
+}

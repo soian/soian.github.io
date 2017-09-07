@@ -1,0 +1,223 @@
+/* tablet */
+@media screen and (min-width: 1024px) and (max-width: 1240px) {
+  main {
+    width: 85%;
+  }
+
+  .three_block {
+    flex-wrap: wrap;
+    width: 99%;
+  }
+
+  .low {
+    margin-top: 40px;
+  }
+
+  .passion h3 {
+    width: 41%;
+ }
+
+  .icon {
+    width: 85%;
+  }
+
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  main {
+    width: 85%;
+  }
+
+  .block_1, .block_2 {
+    width: 47%;
+  }
+
+  .three_block {
+    flex-wrap: wrap;
+
+    .block_bottom {
+      width: 100%;
+      flex-basis: auto;
+
+      h3 {
+        width: 100%;
+      }
+    }
+  }
+
+  .low {
+    margin-top: 40px;
+  }
+    
+  .passion h3 {
+     width: 94%;
+  }
+
+  .arrow::after {
+    content: "";
+    border: solid $color-blue;
+    border-width: 0 14px 14px 0;
+    top: 0;
+    left: 93%;
+  }
+  
+  .arrow::before {
+    content: "";
+    border: solid $color-white;
+    border-width: 0 14px 14px 0;
+    top: 0;
+    left: 90%;
+  }
+    
+  .icon {
+    width: 85%;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 766px) {
+  .arrow::after {
+    content: "";
+    border-width: 0 14px 14px 0;
+    left: 92%;
+  }
+  
+  .arrow::before {
+    content: "";
+    border-width: 0 14px 14px 0;
+    left: 88%;
+  }
+
+  .four_block .passion h3{
+    width: 147%;
+  }
+}
+
+/* mobile */
+ @media screen and (max-width: 767px) {
+   main {
+     width: 85%;
+  }
+
+  .item_photo_top {
+    margin-top: 20px;
+  }
+
+  .photo {
+    width: 150px;
+    height: 150px;
+  }
+
+  .item_name {
+    font-size: 35px; 
+  }
+
+  .item_profession {
+    font-size: 25px;
+  }
+
+  .information {
+    text-align: center;
+    font-size: 18px;
+  }
+
+  svg {
+    overflow: visible;
+  }
+
+  .education_information_text {
+    font-size: 15px;
+  }
+
+  .block_1 h3:first-child, .block_2 h3:first-child {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+
+  .two_block {
+    flex-wrap: wrap;
+    margin-top: 20px;
+
+    .block_1, .block_2 {
+      width: 100%;
+    }
+  }
+
+  .name_1 {
+    font-size: 18px;
+  }
+
+  .block_1 h3, p:not(.name_1) {
+    font-size: 18px;
+  }
+
+  .three_block, {
+    flex-wrap: wrap;
+    margin-top: 0;
+    width: 100%;
+    
+    .block_bottom {
+      flex-basis: 100%;
+     
+      h3 {
+        width: 100%;
+        margin-top: 20px;
+      }
+      
+      svg {
+        width: 168px;
+      }
+
+
+    }
+  }
+
+  .block_bottom  h3 {
+    font-size: 20px;
+  }
+  
+  .four_block {
+    margin-top: 20px;
+    
+    .passion {
+      width: 63%;
+  
+      h3 {
+        width: 134%;
+        font-size: 20px;
+      }
+    }
+  }
+
+  .arrow::after {
+    content: "";
+    border: solid $color-blue;
+    border-width: 0 14px 14px 0;
+    top: 0;
+    left: 83%;
+  }
+  
+  .arrow::before {
+    content: "";
+    border: solid $color-white;
+    border-width: 0 14px 14px 0;
+    top: 0;
+    left: 77%;
+  }
+
+  .icon {
+    width: 85%;
+    margin-bottom: 10px;
+  }
+
+  .text h4 {
+    font-size: 10px;
+  }
+  
+  .education {
+    margin-top: 30px;
+    height: 25px;
+    width: 25px;
+  }  
+}
+
+

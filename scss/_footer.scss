@@ -1,0 +1,19 @@
+.icon {
+  @include flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 auto 100px;
+  text-align: center;
+}
+  
+.education {
+  height: 40px;
+  width: 40px;
+  @include margin_upper;
+}
+
+.text h4 {
+  @include fontsize15;
+  color: $color-grey;
+  font-family: $font-family-regular;
+}

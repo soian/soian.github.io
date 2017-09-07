@@ -1,0 +1,31 @@
+@mixin color {
+  border-left: 8px solid $color-red;
+}
+
+@mixin margin_upper {
+ margin-top: 70px;
+}
+
+@mixin margin_low {
+  margin-top: 20px;
+}
+
+@mixin flex {
+  display: flex;
+}
+
+@mixin uppercase {
+  text-transform: uppercase;
+}
+
+@mixin fontsize20 {
+  font-size: 35px;
+}
+
+@mixin fontsize15 {
+  font-size: 25px;
+}
+
+@mixin line_height25 {
+  line-height: 36px;
+}

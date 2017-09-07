@@ -1,0 +1,32 @@
+.photo {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 5px solid $color-red;
+}
+  
+.item_profession {
+  color: $color-blue;
+  font-family: $font-family-light;
+  font-size: 58px;
+  @include margin_low;
+}
+  
+.item_flex {
+  @include flex;
+  justify-content: center;
+}
+  
+.item_photo_top {
+  @include margin_upper;
+}
+  
+.item_name {
+  color: $color-red;
+  font-family: $font-family-bold;
+  @include margin_low;
+}
+
+.item_name {
+  font-size: 66px; 
+}

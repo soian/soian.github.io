@@ -1,0 +1,160 @@
+.information {
+  @include flex;
+  @include fontsize20;
+  @include margin_low;
+  color: $color-grey;
+  font-family: $font-family-light;
+  text-align: justify;
+}
+    
+//svg_block
+    
+.education_flex {
+  @include flex;
+  justify-content: space-around;
+  width: 75%;
+  margin: auto;
+}
+  
+.svg svg {
+  width: 100%;
+  height: 50px;
+  font-family: $font-family-regular;
+}
+  
+.education_information {
+  @include flex;
+  justify-content: space-around;
+  width: 75%;
+  margin: auto;
+}
+  
+.education_information_text {
+  @include fontsize15;
+  @include uppercase;
+  font-family: $font-family-regular;
+  color: $color-blue;
+}
+    
+//two_blocks
+    
+.two_block {
+  @include flex;
+  @include margin_upper;
+  justify-content: space-between;
+}
+  
+.block_1, 
+.block_2, {
+  width: 40%;
+}
+  
+.block_1 h3:first-child, .block_2 h3:first-child {
+  @include color;
+  @include line_height25;
+  @include fontsize20;
+  font-family: $font-family-aregular;
+  padding-left: $padding-title;
+  background-color: $color-blue;
+  color: $color-white;
+  margin-bottom: 20px;
+}
+  
+.name_1 {
+  color: $color-blue;
+  font-family: $font-family-regular;
+  @include fontsize15;
+}
+  
+.block_1 h3, p:not(.name_1) {
+  color: $color-grey;
+  font-family: $font-family-light;
+  @include fontsize15;
+}
+  
+.block_2 p, .block_1 p {
+  @include margin_low;
+}
+  
+  
+//three_blocks
+    
+.block_bottom  h3 {
+  background-color: $color-blue;
+  color: $color-white;
+  @include line_height25;
+  @include fontsize20;
+  font-family: $font-family-aregular;
+  @include color;
+  padding-left: $padding-title;
+  width: 370px;
+}
+  
+.three_block {
+  @include flex;
+  justify-content: space-between;
+  @include margin_upper;
+}
+  
+.upper {
+  @include uppercase;
+}
+  
+.circle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+  
+.block_bottom svg {
+  height: 50px;
+  width: 221px;
+}
+  
+.three_block .block_bottom {
+  flex-basis: 30%;
+}
+  
+.four_block {
+  @include margin_upper;
+  position: relative;
+}
+  
+.passion h3 {
+  background-color: $color-blue;
+  color: $color-white;
+  @include line_height25;
+  @include fontsize20;
+  font-family: $font-family-aregular;
+  @include color;
+  padding-left: $padding-title;
+  width: 500px;
+  margin-top: 0;
+}
+  
+.arrow::after {
+  content: "";
+  border: solid #fff;
+  border-width: 0 14px 14px 0;
+  padding: 12px;
+  transform: rotate(-45deg);
+  position: absolute;
+  top: 0;
+  left: 38%;
+}
+  
+.arrow::before {
+  content: "";
+  border: solid $color-blue;
+  border-width: 0 14px 14px 0;
+  padding: 12px;
+  transform: rotate(-45deg);
+  position: absolute;
+  top: 0;
+  left: 40%;
+}
+  
+.four_block {
+  overflow: hidden;
+}
